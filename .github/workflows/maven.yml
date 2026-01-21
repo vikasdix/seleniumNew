@@ -30,7 +30,7 @@ jobs:
           cache: maven
 
       - name: Build & Test with Maven
-        run: mvn clean test package
+        run: mvn clean test site
         
       - name: Upload HTML Test Report
         if: always()     # IMPORTANT: upload even if tests fail
